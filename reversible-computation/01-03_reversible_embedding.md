@@ -84,9 +84,7 @@ Instead of replacing the input with the output, quantum computation usually pres
 The standard reversible embedding is
 
 $$
-U_f |x\rangle |y\rangle
-=
-|x\rangle |y\oplus f(x)\rangle.
+U_f |x\rangle |y\rangle = |x\rangle |y\oplus f(x)\rangle.
 $$
 
 Here,
@@ -106,9 +104,7 @@ $$
 then
 
 $$
-U_f|x\rangle|0\rangle
-=
-|x\rangle|f(x)\rangle.
+U_f|x\rangle|0\rangle = |x\rangle|f(x)\rangle.
 $$
 
 Therefore, the function value is obtained without deleting the original input.
@@ -148,10 +144,7 @@ $$
 and applying the same operation again gives
 
 $$
-|x\rangle
-|(y\oplus f(x))\oplus f(x)\rangle
-=
-|x\rangle|y\rangle.
+|x\rangle|(y\oplus f(x))\oplus f(x)\rangle = |x\rangle|y\rangle.
 $$
 
 Therefore,
@@ -227,9 +220,7 @@ $$
 Therefore,
 
 $$
-\langle U\psi|U\phi\rangle
-=
-\langle\psi|\phi\rangle.
+\langle U\psi|U\phi\rangle = \langle\psi|\phi\rangle.
 $$
 
 This means that orthogonal quantum states must remain orthogonal after unitary evolution.
@@ -441,22 +432,13 @@ An important point is that the reversible circuit must work not only for one cla
 Suppose
 
 $$
-|\psi\rangle
-=
-\sum_x \alpha_x |x\rangle.
+|\psi\rangle = \sum_x \alpha_x |x\rangle.
 $$
 
 Then the oracle acts as
 
 $$
-U_f
-\left(
-\sum_x \alpha_x |x\rangle|0\rangle
-\right)
-=
-\sum_x
-\alpha_x
-|x\rangle|f(x)\rangle.
+U_f\left(\sum_x \alpha_x |x\rangle|0\rangle\right) = \sum_x\alpha_x|x\rangle|f(x)\rangle.
 $$
 
 Thus, the function is evaluated coherently over all basis states in the superposition.
@@ -488,9 +470,7 @@ can be evaluated coherently.
 A common theoretical description is
 
 $$
-U_f|x\rangle|y\rangle
-=
-|x\rangle|y\oplus f(x)\rangle.
+U_f|x\rangle|y\rangle = |x\rangle|y\oplus f(x)\rangle.
 $$
 
 However, this notation hides the cost of constructing the reversible circuit for $f$.
@@ -551,10 +531,7 @@ $$
 However, a more realistic comparison is
 
 $$
-T_{\mathrm{classical}}
-=
-N
-T_f^{\mathrm{classical}}
+T_{\mathrm{classical}} = NT_f^{\mathrm{classical}}
 $$
 
 versus
