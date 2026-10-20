@@ -57,9 +57,7 @@ $$
 can instead be embedded into a reversible operation:
 
 $$
-U_f |x\rangle |y\rangle
-=
-|x\rangle |y \oplus f(x)\rangle.
+U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle.
 $$
 
 The original input $x$ is preserved, making the overall transformation reversible.
@@ -157,9 +155,7 @@ A classical computation may contain many irreversible operations whose reversibl
 Many quantum algorithms assume access to an oracle such as
 
 $$
-U_f |x\rangle |y\rangle
-=
-|x\rangle |y \oplus f(x)\rangle.
+U_f |x\rangle |y\rangle = |x\rangle |y \oplus f(x)\rangle.
 $$
 
 However, this notation often hides the actual implementation cost of computing $f(x)$.
@@ -216,19 +212,7 @@ However, if one quantum oracle call itself requires a large reversible circuit, 
 A realistic resource analysis should therefore consider the complete computational pipeline:
 
 $$
-T_{\mathrm{total}}
-=
-T_{\mathrm{state\ prep}}
-+
-T_{\mathrm{oracle}}
-+
-T_{\mathrm{quantum}}
-+
-T_{\mathrm{uncompute}}
-+
-T_{\mathrm{measurement}}
-+
-T_{\mathrm{classical}}.
+T_{\mathrm{total}} = T_{\mathrm{state\ prep}} + T_{\mathrm{oracle}} + T_{\mathrm{quantum}} + T_{\mathrm{uncompute}} + T_{\mathrm{measurement}} + T_{\mathrm{classical}}.
 $$
 
 Important resource metrics may include
