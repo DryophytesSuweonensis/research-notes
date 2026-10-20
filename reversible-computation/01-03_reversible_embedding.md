@@ -84,7 +84,7 @@ Instead of replacing the input with the output, quantum computation usually pres
 The standard reversible embedding is
 
 $$
-U_f|x\rangle|y\rangle = |x\rangle|y\oplusf(x)\rangle.
+U_f|x\rangle|y\rangle = |x\rangle|y\oplus f(x)\rangle.
 $$
 
 Here,
